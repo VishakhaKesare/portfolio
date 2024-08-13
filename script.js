@@ -37,14 +37,14 @@ $(document).ready(function(){
     var typed = new Typed(".typing", {
         strings: ["Full Stack  .Net Developer", "Software Developer", "Database Developer",],
         typeSpeed: 100,
-        backSpeed: 60,
+        backSpeed: 40,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
         strings: ["Back-End Developer","Full Stack .Net Developer", "Software Developer", "Database Developer",],
         typeSpeed: 100,
-        backSpeed: 60,
+        backSpeed: 40,
         loop: true
     });
 
