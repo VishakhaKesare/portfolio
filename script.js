@@ -1,16 +1,17 @@
 $(document).ready(function(){
+
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
-        }else{
+        } else {
             $('.navbar').removeClass("sticky");
         }
         
         // scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
     });
@@ -18,12 +19,10 @@ $(document).ready(function(){
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
 
     $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
@@ -35,14 +34,22 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Full Stack  .Net Developer", "Competitive programmer", "Database Architect",],
+        strings: [
+            "React.js Developer",
+            "Front-End Developer",
+            "Full Stack .NET Developer"
+        ],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Back-End Developer","Full Stack .Net Developer", "Comparative programming", "Database Architect",],
+    var typed2 = new Typed(".typing-2", {
+        strings: [
+            "React.js Developer",
+            "Front-End Developer",
+            "Full Stack .NET Developer"
+        ],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -56,18 +63,9 @@ $(document).ready(function(){
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
+            0:{ items: 1, nav: false },
+            600:{ items: 2, nav: false },
+            1000:{ items: 3, nav: false }
         }
     });
 });

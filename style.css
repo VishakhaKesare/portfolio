@@ -747,3 +747,192 @@ social media */
     font-weight: 900;
 
   }
+
+  /* ================================
+   EXPERIENCE SECTION STYLING
+================================ */
+.experience{
+    background: #fff;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+}
+
+.experience .title::after{
+    content: "my work";
+}
+
+.experience .experience-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience .card{
+    background: #222;
+    color: #fff;
+    border-radius: 8px;
+    padding: 25px 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.experience .card:hover{
+    transform: translateY(-8px);
+    background: crimson;
+}
+
+.experience .card .box{
+    transition: all 0.3s ease;
+}
+
+.experience .card:hover .box{
+    transform: scale(1.03);
+}
+
+.experience .card h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experience .card h4{
+    font-size: 18px;
+    color: #03a9f4;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.experience .card p{
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.experience .card ul{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.experience .card ul li{
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* Hover color change for list */
+.experience .card:hover ul li{
+    color: #fff;
+}
+//* ==========================================
+   CLEAN PREMIUM SKILLS SECTION (UPDATED)
+========================================== */
+
+.skills-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skills-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.skills-left h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.skills-left p {
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* RIGHT SIDE CARDS */
+.skills-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* CARD BOX */
+.skill-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.skill-card h3 {
+    margin-bottom: 18px;
+    color: crimson;
+    font-size: 20px;
+    border-left: 4px solid crimson;
+    padding-left: 10px;
+}
+
+/* GRID INSIDE CARDS */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+}
+
+/* EACH SKILL ITEM */
+.skill-item {
+    background: #f7f7f7;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.skill-item i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 6px;
+    color: crimson;
+}
+
+.skill-item:hover {
+    background: crimson;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+.skill-item:hover i {
+    color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+    .experience .card{
+        padding: 20px;
+    }
+    .experience .card h3{
+        font-size: 20px;
+    }
+    .experience .card h4{
+        font-size: 16px;
+    }
+}
+
