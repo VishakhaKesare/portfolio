@@ -40,7 +40,7 @@ $(document).ready(function(){
             "Full Stack .NET Developer"
         ],
         typeSpeed: 100,
-        backSpeed: 60,
+        backSpeed: 40,
         loop: true
     });
 
@@ -51,7 +51,7 @@ $(document).ready(function(){
             "Full Stack .NET Developer"
         ],
         typeSpeed: 100,
-        backSpeed: 60,
+        backSpeed: 40,
         loop: true
     });
 
@@ -69,3 +69,4 @@ $(document).ready(function(){
         }
     });
 });
+
